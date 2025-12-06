@@ -3,87 +3,66 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Energia Quântica</title>
 
-    <!-- Manifest (PWA) -->
+    <!-- Cor do tema (navegador mobile) -->
+    <meta name="theme-color" content="#1d1a1a" />
+
+    <!-- Ícones -->
+    <link rel="icon" href="/icon-192.png" type="image/png" />
     <link rel="manifest" href="/manifest.json" />
 
-    <!-- Ícones do PWA -->
-    <link rel="icon" href="/icons/icon-192.png">
-    <link rel="apple-touch-icon" href="/icons/icon-512.png">
-
-    <meta name="theme-color" content="#000000" />
+    <!-- Estilo -->
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4415158915262191"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=SEU_ANALYTICS_ID"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT5J706592"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'SEU_ANALYTICS_ID');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YT5J706592');
     </script>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
+    <!-- Registrar o Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
         }
-        header {
-            padding: 15px;
-            background: #222;
-            color: white;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .ad-box {
-            margin: 20px 0;
-            text-align: center;
-        }
-    </style>
+    </script>
+
+    <!-- SEO -->
+    <meta name="description" content="Energia Quântica - Conhecimento, vibração, expansão da consciência e transformação pessoal.">
 </head>
 
 <body>
 
-<header>
-    <h1>Energia Quântica</h1>
-</header>
+    <header>
+        <h1>Bem-vindo à Energia Quântica ✨</h1>
+    </header>
 
-<main>
-    <h2>Bem-vindo!</h2>
-    <p>Seu portal de energia, espiritualidade e transformação pessoal.</p>
+    <main>
+        <p>Seu portal de expansão, evolução e consciência.</p>
 
-    <!-- Bloco de anúncio -->
-    <div class="ad-box">
+        <!-- Exemplo de bloco de anúncio opcional
         <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="SEU_ADSENSE_CLIENT_ID"
-             data-ad-slot="0000000000"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
+            style="display:block"
+            data-ad-client="ca-pub-4415158915262191"
+            data-ad-slot="1234567890"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-    </div>
-</main>
-
-<script>
-    // Registrar o service worker
-    if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/service-worker.js")
-        .then(() => console.log("Service Worker Ativado!"))
-        .catch((err) => console.log("Erro ao ativar SW:", err));
-    }
-</script>
+        -->
+    </main>
 
 </body>
 </html>
