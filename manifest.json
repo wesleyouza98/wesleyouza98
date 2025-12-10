@@ -1,23 +1,24 @@
 {
   "name": "Energia Quântica",
   "short_name": "EnergiaQ",
-  "description": "Portal de energia, espiritualidade e transformação pessoal.",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/?utm_source=homescreen",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
-  "orientation": "portrait",
+  "background_color": "#1d1a1a",
+  "theme_color": "#1d1a1a",
+  "description": "Conhecimento, vibração e transformação pessoal.",
   "icons": [
     {
-      "src": "/icons/icon-192.png",
+      "src": "/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "scope": "/"
 }
